@@ -5,7 +5,7 @@ const AppStore = () => {
     <div>
       <svg
         width="226"
-        height="36"
+        height="30"
         viewBox="0 0 226 36"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"

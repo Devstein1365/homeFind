@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import RentalImg from "./RentalImg";
 
 const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -22,7 +23,7 @@ const Hero = () => {
       description: "Connect with property owners without middleman fees",
       stats: {
         left: { value: "10k+", line1: "Successful", line2: "Jobs Done" },
-        right: { value: "Over 10k+", line1: "Renters", line2: "" },
+        right: { value: "Over 10k+", line1: "Renters", line2: (<RentalImg/>) },
       },
     },
     {
@@ -95,7 +96,7 @@ const Hero = () => {
         <div className="w-4/5 mx-auto bg-white/10 bg-opacity-90 rounded-lg mb-8 backdrop-blur-20 py-4 px-6">
           <div className="max-w-3xl mx-auto flex justify-between items-center">
             <div className="text-left animate-fadeIn flex flex-col items-start animation-delay-600 text-white">
-              <div className="text-4xl md:text-[40px] font-medium mb-2">
+              <div className="text-4xl md:text-[30px] font-medium mb-2">
                 {slides[currentSlide]?.stats?.left?.value}
               </div>
               <div className="text-sm md:text-[20px] font-medium">

@@ -7,9 +7,9 @@ import Hero from "../components/Hero";
 const Home = () => {
   return (
     <div>
-      <nav className="bg-transparent top-20 left-20 md:bg-white md:flex md:items-center md:justify-between md:px-[25px] md:py-[10px]">
+      <nav className="bg-white flex items-center justify-between px-[25px] py-[10px]">
         <Logo />
-        <div className="hidden lg:flex lg:items-center lg:gap-6">
+        <div className="hidden md:flex md:items-center md:gap-6">
           <NigeriaLogo />
           <AppStore />
         </div>
